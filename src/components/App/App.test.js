@@ -3,21 +3,21 @@ import { render } from "@testing-library/react";
 
 import App from "./App";
 
-const mockedArticleValue = jest.fn();
+const mockedUsersValue = jest.fn();
 const mockedErrorValue = jest.fn();
 
 jest.mock("../Users", () => () => "Users");
 
 jest.mock("../../hooks", () => ({
   useUsers: () => ({
-    users: mockedArticleValue(),
+    users: mockedUsersValue(),
     error: mockedErrorValue(),
   }),
 }));
 
 describe("COMPONENT - App", () => {
   it("renders App component with Users", () => {
-    mockedArticleValue.mockImplementation(() => "fooUsers");
+    mockedUsersValue.mockImplementation(() => "fooUsers");
     mockedErrorValue.mockImplementation(() => null);
 
     const { asFragment } = render(<App />);
@@ -26,7 +26,7 @@ describe("COMPONENT - App", () => {
   });
 
   it("renders App component with loading", () => {
-    mockedArticleValue.mockImplementation(() => null);
+    mockedUsersValue.mockImplementation(() => null);
     mockedErrorValue.mockImplementation(() => null);
 
     const { asFragment } = render(<App />);
@@ -41,7 +41,7 @@ describe("COMPONENT - App", () => {
       // Allows suppressing error logs
     });
 
-    mockedArticleValue.mockImplementation(() => null);
+    mockedUsersValue.mockImplementation(() => null);
     mockedErrorValue.mockImplementation(() => new Error("Foo error"));
 
     expect(() => render(<App />)).toThrow();
