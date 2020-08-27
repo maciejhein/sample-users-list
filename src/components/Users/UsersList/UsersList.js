@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const List = ({ users }) => {
+const UsersList = ({ users }) => {
   return (
     <ul className="users-list">
       {users.map(({ id, name, username }, index) => (
@@ -15,12 +15,12 @@ const List = ({ users }) => {
   );
 };
 
-List.defaultProps = {
+UsersList.defaultProps = {
   users: [],
 };
 
-List.propTypes = {
+UsersList.propTypes = {
   users: PropTypes.array,
 };
 
-export default List;
+export default UsersList;
