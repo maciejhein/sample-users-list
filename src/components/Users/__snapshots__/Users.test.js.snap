@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`COMPONENT - Users renders Users component 1`] = `
+<DocumentFragment>
+  <section
+    class="users"
+  >
+    <h1
+      class="users__header"
+    >
+      User List
+    </h1>
+    <input
+      class="users__input"
+      data-testid="users-input"
+      placeholder="Search by user name..."
+      type="text"
+    />
+    <ul
+      class="users-list"
+    >
+      <li
+        class="users-list__item"
+      >
+        <span
+          class="users-list__item-part"
+        >
+          1.
+        </span>
+        <span>
+          John Robinson
+        </span>
+        <span
+          class="users-list__item-part"
+        >
+          @
+        </span>
+      </li>
+      <li
+        class="users-list__item"
+      >
+        <span
+          class="users-list__item-part"
+        >
+          2.
+        </span>
+        <span>
+          John Bradley
+        </span>
+        <span
+          class="users-list__item-part"
+        >
+          @
+        </span>
+      </li>
+    </ul>
+  </section>
+</DocumentFragment>
+`;

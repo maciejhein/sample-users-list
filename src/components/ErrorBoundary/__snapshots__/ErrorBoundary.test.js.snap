@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`COMPONENT - ErrorBoundary renders the child component if there is no error 1`] = `
+<DocumentFragment>
+  <p>
+    I'm child component!
+  </p>
+</DocumentFragment>
+`;

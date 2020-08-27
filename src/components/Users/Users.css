@@ -1,0 +1,12 @@
+.users {
+    width: 15rem;
+}
+
+.users .users__header {
+    text-align: center;
+}
+
+.users .users__input {
+    width: 100%;
+    font-size: 1.1rem;
+}

@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`COMPONENT - App renders App component with Users 1`] = `
+<DocumentFragment>
+  <main
+    class="main-container"
+  >
+    Users
+  </main>
+</DocumentFragment>
+`;
+
+exports[`COMPONENT - App renders App component with loading 1`] = `
+<DocumentFragment>
+  <main
+    class="main-container"
+  >
+    <div>
+      Loading...
+    </div>
+  </main>
+</DocumentFragment>
+`;
