@@ -15,7 +15,7 @@ const Users = ({ users }) => {
 
     setCurrentUsers(searchedUsers);
   };
-
+  // TODO Replace input to controled component
   return (
     <section className="users">
       <h1 className="users__header">User List</h1>
