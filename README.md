@@ -2,7 +2,7 @@
 
 Hello. <br />
 
-I am happy to present you an LEOCODE interview exercise.
+I am happy to present you an interview exercise.
 
 ### Tooling
 
